@@ -13,7 +13,7 @@ import os
 st.title("BearAI......")
 st.write("By Aadarsh") 
 
-os.environ["_BARD_API_KEY"] = "ZgjaRG0O8kBfj5LLNk8eKwaC3hb67eHdI5tr64t6RbzvJQ5xlG28oFeKkjoleTElvAauqg."
+os.environ["_BARD_API_KEY"] = 'ZgjaRG0O8kBfj5LLNk8eKwaC3hb67eHdI5tr64t6RbzvJQ5xlG28oFeKkjoleTElvAauqg.'
 
 def response_api(promot) :
     message = Bard(timeout=10).get_answer(str(promot))['content']
